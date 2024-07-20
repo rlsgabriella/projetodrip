@@ -1,26 +1,38 @@
 .container-oferta {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red ;  */
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
 }
 
 .txt {
-    display: block;
-    width: 400px;
-    height: 200px;
-    margin: 100px;
-    padding: 10px;
-    justify-content: end;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* border: 1px solid rgb(0, 255, 166); */
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: "Inter";
 }
 
 .img {
     display: flex;
     align-items: center;
-    margin-right: 10%;
-
+    /* border: 1px solid rgb(85, 255, 0); */
+    width: 100%;
 }
 
 .button {
     width: 150px;
-    background-color: rgb(211, 55, 211);
-    color: white
+    background-color: #C92071;
+    color: white;
+    border-radius: 60px;
+    padding: 5px 0px 5px 0px;
+    font-family: "Inter";
+    font-weight: bold;
 }
